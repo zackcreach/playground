@@ -22,8 +22,12 @@
 //     );
 // };
 
-import test1 from './test1.js';
-import test2 from './test2.js';
+// import test1 from './test1.js';
+// import test2 from './test2.js';
+import {loopFor, loopWhile, loopDoWhile} from './loops.js';
 
-test1('Test 1 Running');
-test2('Test 2 Running');
+window.onload = () => {
+  loopFor();
+  loopWhile();
+  loopDoWhile();
+}

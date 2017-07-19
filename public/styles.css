@@ -1,11 +1,18 @@
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: .9rem;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  border: 1px solid red;
+body {
+  text-align: center
+}
+
+.app {
+  background: #ccc;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 20px 10px 0 10px;
 }

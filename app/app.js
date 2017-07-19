@@ -1,33 +1,18 @@
-// import { inc, dec } from './actions';
-//
-// window.onload = function() {
-//     let number = document.getElementById('number');
-//     let incBtn = document.getElementById('inc');
-//     let decBtn = document.getElementById('dec');
-//
-//     incBtn.addEventListener(
-//         'click',
-//         function() {
-//             number.innerHTML = inc(+number.innerHTML);
-//         },
-//         false
-//     );
-//
-//     decBtn.addEventListener(
-//         'click',
-//         function() {
-//             number.innerHTML = dec(+number.innerHTML);
-//         },
-//         false
-//     );
-// };
+// Loop fun
+// import {loopFor, loopWhile, loopDoWhile} from 'loops.js';
 
-// import test1 from './test1.js';
-// import test2 from './test2.js';
-import {loopFor, loopWhile, loopDoWhile} from './loops.js';
+// window.onload = () => {
+//   loopFor();
+//   loopWhile();
+//   loopDoWhile();
+// }
 
-window.onload = () => {
-  loopFor();
-  loopWhile();
-  loopDoWhile();
-}
+
+
+// Selector fun
+import selected from 'selectors';
+
+const colorAry = ['blue', 'red', 'yellow', 'black', 'purple'];
+const appList = document.querySelector('app');
+
+new selected(colorAry, appList);

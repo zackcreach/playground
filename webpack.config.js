@@ -8,6 +8,13 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js',
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css'],
+    modules: [
+      'node_modules',
+      './app',
+    ],
+  },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
